@@ -1,0 +1,89 @@
+
+.border-top-preto {
+    border-top-width: 3px;
+    border-top-color: black;
+}
+
+.border-top-verde {
+    border-top-width: 3px;
+    border-top-color: #5cb85c;
+}
+
+.border-top-amarelo {
+    border-top-width: 3px;
+    border-top-color: #f0ad4e;
+}
+
+.bg-cinzento {
+    background-color: rgb(200 , 200, 200);
+    color:rgb(50, 50, 50);
+    font-size: 12pt;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: none;
+}
+
+.form-label {
+    color:rgb(50, 50, 50);
+    font-size: 10pt;
+    margin-bottom: 0px;
+}
+
+.form-control {
+    color: rgb(180, 180, 180);
+    border-width: 1px;
+    border-color: rgb(180, 180, 180);
+}
+
+input[disabled]{
+    color: rgb(100, 100, 100);     
+}
+
+textarea[disabled]{
+    color: rgb(100, 100, 100);     
+}
+
+.unidade {
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.table-fixed {
+    overflow-y: auto;
+    height: 180px;
+}
+
+.table-fixed thead th {
+    position: sticky;
+    top: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 180px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+th {
+    width: 50%;
+    font-size: 10pt;
+    text-align: center;
+    
+}
+
+td {
+    font-size: 10pt;
+    text-align: center;
+}
+
+.checkbox-inline {
+    font-size: 12pt;
+}
+
+.documentosPara {
+    font-size:14px; 
+    margin-bottom: 0px;
+}

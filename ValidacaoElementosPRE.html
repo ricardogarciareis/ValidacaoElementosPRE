@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="pt-pt">
+<head>
+    <title>Validacao de Elementos Instrutórios PRE</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="dzrrcreations">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="./Resources/ValidacaoElementosPRE.css">
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-12">
+
+                <button type="button" class="btn btn-primary mt-3" id="myBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Validação de Elementos Instrutórios PRE
+                </button>
+
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                      <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Validação de Elementos Instrutórios da PRE</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        <div class="modal-body" style="background-color: rgb(241, 241, 241);">
+                            
+                            <div class="row">
+                                <div class="col">
+
+                                    <div class="card mt-1">
+                                        <div class="card-header bg-cinzento">
+                                            Dados do Requerimento
+                                        </div>
+                                        <div class="card-body">
+
+                                            <div class="row mt-0">
+
+                                                <div class="col-4">
+                                                    <div class="row">
+                                                        <p style="font-size: 14px; margin-bottom: 0px;">Modelo de Requerimento:</p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="radioModelo" id="radioModelo01" checked>
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioModelo01">
+                                                                    Licença de Produção
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="radioModelo" id="radioModelo02">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioModelo02">
+                                                                    Alteração Não Substancial de Licença de Produção
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="radioModelo" id="radioModelo03">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioModelo03">
+                                                                    Alteração
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="radioModelo" id="radioModelo04">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioModelo04">
+                                                                    Licença de Exploração
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="radioModelo" id="radioModelo05">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioModelo05">
+                                                                    Licença de Produção - UPAC
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-8">
+                                                    <div class="row">
+                                                        <p style="font-size: 14px; margin-bottom: 0px;">Tipo de Requerimento:</p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="form-check" id="tipoOriginal">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo01" checked>
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo01">
+                                                                    Original
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoHibridizacao">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo02">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo02">
+                                                                    Hibridização
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoSobreequipamento">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo03">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo03">
+                                                                    Sobre-equipamento
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoReequipamento">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo04">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo04">
+                                                                    Reequipamento
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoTransmissao">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo05">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo05">
+                                                                    Transmissão
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoAltDenSocial">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo06">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo06">
+                                                                    Alteração de Denominação Social
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoProrrogPrazo">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo07">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo07">
+                                                                    Prorrogação de Prazo
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoAltLocalizacaoCentral">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo08">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo08">
+                                                                    Alteração de Localização da Central
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoAltTecnolCombFonte">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo09">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo09">
+                                                                    Alteração da tecnologia de produção, do combustível ou fonte de energia primária utilizada
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoAltQtdEquipamentos">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo10">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo10">
+                                                                    Alteração de n.º de grupos geradores, respetivas caldeiras, turbinas e geradores (centro electroprodutores termoelétricos ou hidroelétricos)
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoAutorizTestesEnsaios">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo11">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo11">
+                                                                    Autorização para testes, ensaios e exploração em regime experimental
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check" id="tipoVistoriaEmissaoLE">
+                                                                <input class="form-check-input" type="radio" name="radioTipo" id="radioTipo12">
+                                                                <label class="form-check-label" style="font-size: 14px;" for="radioTipo12">
+                                                                    Vistoria e emissão da licença de exploração
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col">
+
+                                    <div class="card">
+                                        <div class="card-header bg-cinzento">
+                                            Elementos Instrutórios
+                                        </div>
+                                        <div class="card-body">
+
+                                            
+
+                                            <div class="row">
+                                                
+                                                <div class="col-6">
+                                                    <label for="file-selector" class="form-label">Seleção de Elementos Instrutórios Entregues:</label>
+                                                    <input class="form-control" type="file" id="file-selector" accept=".pdf, .zip" multiple onclick="limparEntregues()">
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-4">
+                                                    <label class="form-label" style="margin-bottom: 0px;">Lista de Elementos Entregues:</label>
+                                                    <div class="col-12" id="lista-ficheiros-entregues"></div>
+                                                </div>
+                                                
+                                                <div class="col-4">
+                                                    <label class="form-label" style="margin-bottom: 0px;">Lista de Elementos Obrigatórios:</label>
+                                                    <div class="col-12" id="lista-ficheiros-obrigatorios"></div>
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <label class="form-label" style="margin-bottom: 0px;">Lista de Elementos Em Falta:</label>
+                                                    <div class="col-12" id="lista-ficheiros-emfalta"></div>
+                                                </div>
+                                            </div>
+                                            
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col text-start">
+                                        <!--<button type="button" class="btn btn-primary" onclick="validarElementos()">Validar</button>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+      
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script language="JavaScript" type="text/javascript" src="./Resources/ValidacaoElementosPRE.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./Resources/FicheirosObrigatorios.js"></script>
+</body>
+</html>
